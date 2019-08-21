@@ -1,0 +1,60 @@
+{
+    "getSchema":{
+       "type": "object",
+       "required": [
+         "voter_id" 
+       ],
+       "properties": {
+         "voter_id" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "voter_id",
+          "name" ,
+          "gender",
+          "mobile_no",
+          "age",
+          "constituency_id" 
+        ],
+        "properties": {
+          "voter_id" : {
+            "type": "varchar",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "name" : {
+            "type" : "varchar",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "gender": {
+            "type": "varchar",
+            "minLength": 1,
+            "maxLength": 12
+          },
+          "face_id": {
+            "type": "varchar",
+            "maxLength": 1000,
+            "default": null
+          },
+          "mobile_no": {
+            "type": "varchar",
+            "minLength": 1
+          },
+          "date": {
+            "type": "varchar"
+          },
+          "age": {
+            "type": "int"
+          },
+          "constituency_id": {
+            "type": "varchar",
+            "maxLength": 100
+          }
+        }
+     }
+}

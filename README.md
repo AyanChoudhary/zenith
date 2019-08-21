@@ -1,0 +1,1 @@
+## NodeJS server for querying with the sql database of Instavote DApp.
